@@ -11,6 +11,11 @@
 		E96B604D2B8DD2E90080FB21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96B604C2B8DD2E90080FB21 /* ContentView.swift */; };
 		E96B604F2B8DD2EC0080FB21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E96B604E2B8DD2EC0080FB21 /* Assets.xcassets */; };
 		E96B60522B8DD2EC0080FB21 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E96B60512B8DD2EC0080FB21 /* Preview Assets.xcassets */; };
+		E96B605C2B8DD3440080FB21 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96B605B2B8DD3440080FB21 /* HomeView.swift */; };
+		E96B605E2B8DD3660080FB21 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96B605D2B8DD3660080FB21 /* StoryView.swift */; };
+		E96B60602B8DD7AC0080FB21 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96B605F2B8DD7AC0080FB21 /* PostModel.swift */; };
+		E96B60622B8DDAC90080FB21 /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96B60612B8DDAC90080FB21 /* PostListView.swift */; };
+		E96B60642B8DDAE10080FB21 /* PostCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96B60632B8DDAE10080FB21 /* PostCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		E96B604C2B8DD2E90080FB21 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E96B604E2B8DD2EC0080FB21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E96B60512B8DD2EC0080FB21 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E96B605B2B8DD3440080FB21 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E96B605D2B8DD3660080FB21 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
+		E96B605F2B8DD7AC0080FB21 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		E96B60612B8DDAC90080FB21 /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
+		E96B60632B8DDAE10080FB21 /* PostCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,9 @@
 		E96B60492B8DD2E90080FB21 /* SocialMediaUIYT */ = {
 			isa = PBXGroup;
 			children = (
+				E96B605A2B8DD3330080FB21 /* viewModel */,
+				E96B60592B8DD3250080FB21 /* views */,
+				E96B60582B8DD31B0080FB21 /* components */,
 				E96B604A2B8DD2E90080FB21 /* SocialMediaUIYTApp.swift */,
 				E96B604C2B8DD2E90080FB21 /* ContentView.swift */,
 				E96B604E2B8DD2EC0080FB21 /* Assets.xcassets */,
@@ -65,6 +78,32 @@
 				E96B60512B8DD2EC0080FB21 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E96B60582B8DD31B0080FB21 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				E96B605D2B8DD3660080FB21 /* StoryView.swift */,
+				E96B60612B8DDAC90080FB21 /* PostListView.swift */,
+				E96B60632B8DDAE10080FB21 /* PostCard.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		E96B60592B8DD3250080FB21 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				E96B605B2B8DD3440080FB21 /* HomeView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		E96B605A2B8DD3330080FB21 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E96B605F2B8DD7AC0080FB21 /* PostModel.swift */,
+			);
+			path = viewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E96B605C2B8DD3440080FB21 /* HomeView.swift in Sources */,
+				E96B60602B8DD7AC0080FB21 /* PostModel.swift in Sources */,
 				E96B604D2B8DD2E90080FB21 /* ContentView.swift in Sources */,
+				E96B605E2B8DD3660080FB21 /* StoryView.swift in Sources */,
+				E96B60622B8DDAC90080FB21 /* PostListView.swift in Sources */,
 				E96B604B2B8DD2E90080FB21 /* SocialMediaUIYTApp.swift in Sources */,
+				E96B60642B8DDAE10080FB21 /* PostCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +331,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cebrail.SocialMediaUIYT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -316,6 +364,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cebrail.SocialMediaUIYT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
